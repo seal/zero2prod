@@ -1,5 +1,5 @@
 fn main() {
     println!("Hello, world!");
-    let camelCase = "string";
-    println!("{}", camelCase);
+    let snake_case = "string";
+    println!("{}", snake_case);
 }
