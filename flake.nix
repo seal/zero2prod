@@ -18,6 +18,7 @@
       with pkgs;
       {
         devShells.default = mkShell {
+            LD_LIBRARY_PATH = lib.makeLibraryPath [ openssl ];
           buildInputs = [
             openssl
             pkg-config
