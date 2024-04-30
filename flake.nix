@@ -24,11 +24,14 @@
             pkg-config
             eza
             fd
-            rust-bin.beta.latest.default
+            rust-bin.stable.latest.default
+            #rust-analyzer
+            rust-analyzer
           ];
 
           shellHook = ''
             alias ls=eza
+            export PATH=$PATH:${pkgs.rust-analyzer}/bin
             alias find=fd
           '';
         };
